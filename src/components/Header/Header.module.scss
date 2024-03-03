@@ -1,0 +1,33 @@
+.header {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 5vh;
+  flex-direction: row;
+  justify-content: space-around;
+  background: white;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  button {
+    width: 10vw;
+    min-width: 120px;
+    height: 4vh;
+    font-size: 18px;
+    padding: 2px 0;
+    border-radius: 40px;
+    color: gray;
+    background: #f3f3f2;
+    text-align: center;
+    @media (max-width: 800px) {
+        font-size: 14px;
+        min-width: 80px;
+    }
+  }
+  button:hover {
+    color: black;
+    transition: all .5s ease-out;
+  }
+}
